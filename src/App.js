@@ -10,7 +10,9 @@ constructor(){
 
   this.state = {
     monsters: [],
-    searchField: ''
+    searchField: '',
+    title: ''
+
 
   };
 }
@@ -28,14 +30,7 @@ monster.name.toLowerCase().includes(searchField.toLowerCase())
   )
     return (
       <div className="App">
-       {/*<input*/}
-       {/*  type='search'*/}
 
-       {/*  onChange={e => {*/}
-       {/*    this.setState({searchField: e.target.value }, () => console.log(this.state)*/}
-       {/*    )*/}
-       {/*  }}*/}
-       {/*  />*/}
          <Searchbox
            placeholder='search monsters'
            handleChange={e => {
